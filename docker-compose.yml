@@ -3,7 +3,7 @@ version: '3.8'
 services:
   backend:
     build:
-      context: ./backend
+      context: /workspaces/fullstack/devops-fullstack-app-main/backend
     container_name: backend
     ports:
       - "8080:8080"
@@ -19,7 +19,7 @@ services:
 
   frontend:
     build:
-      context: ./frontend
+      context: /workspaces/fullstack/devops-fullstack-app-main/frontend
     container_name: frontend
     ports:
       - "3000:3000"
